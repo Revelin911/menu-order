@@ -28,9 +28,10 @@ def place_order(menu):
     print("Welcome to the Generic Take Out Restaurant.")
 
     # TODO: Create a continuous while loop so customers can order multiple items
+    while True:
 
         # TODO: Ask the customer what they want to order
-
+        meal = input("What would you like to order?\n")
 
         # Create a variable for the menu item number
         i = 1
@@ -115,6 +116,7 @@ def update_order(order, menu_selection, menu_items):
 
 
             # TODO: Check if the quantity is a number, default to 1 if not
+            if quantity = int()
 
 
             # TODO: Add a dictionary to the order list 
@@ -142,7 +144,7 @@ def print_itemized_receipt(receipt):
                     and quantity ordered.
     """
     # Uncomment the following line if you need to check the structure of the receipt
-    #print(receipt)
+    print(receipt)
 
     # TODO: Loop through the items in the customer's receipt
 
@@ -150,7 +152,9 @@ def print_itemized_receipt(receipt):
 
 
         # TODO: Print the receipt line using the print_receipt_line function
+        print(print_receipt_line)
         # TODO: Send the item name, price, and quantity as separate arguments
+        print_itemized_receipt(name, price, quantity="")
 
 
 ##################################################
