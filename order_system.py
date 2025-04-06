@@ -37,7 +37,7 @@ def place_order(menu):
             for meal, price in options.items():
                 print_menu_line(i, food_category, meal, price)
                 i += 1
-                place_order(menu)
+                # place_order(menu)
 
         # TODO: Ask the customer what they want to order
         menu_selection = input("What would you like to order?").strip()
@@ -104,20 +104,23 @@ def place_order(menu):
             # TODO: Use list comprehension to create a list called prices_list,
             # TODO: which contains the total prices for each item in the order list:
             # TODO: The total price for each item should multiply the price by quantity
-    if order:
+    if another.lower() == "n":
         prices_list = [item["Price"] * item["Quantity"] for item in order]
 
             # TODO: Create an order_total from the prices list using sum()
             # TODO: Round the prices to 2 decimal places.
         order_total = round(sum(prices_list), 2)
-    else:
-            order_total = 0.00
+    # else:
+    #         order_total = 0.00
 
             # TODO: Exit the ordering loop
             # TODO: Either use a break statement or set the condition to False
-            # break
+        # break
 
     # TODO: Return the order list and the order total
+
+    print(order_total)
+
     return order, order_total
 
 def update_order(order, menu_selection, menu_items):
