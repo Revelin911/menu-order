@@ -116,6 +116,7 @@ def place_order(menu):
             # TODO: Exit the ordering loop
             # TODO: Either use a break statement or set the condition to False
         # break
+        # TODO: Create a continuous while loop so customers can order multiple items while True: print('Menu:') print_menu_heading() i = 1 for food_category, options in menu.items(): for meal, price in options.items(): print_menu_line(i, food_category, meal, price) i += 1 # place_order(menu) # TODO: Ask the customer what they want to order menu_selection = input("What would you like to order?").strip() order = update_order(order, menu_selection, menu_items) another = input("Would you like to order anything else? (y/n): ").strip().lower() if another == 'n': print('Thank you for your order!') prices_list = [item["Price"] * item["Quantity"] for item in order] order_total = round(sum(prices_list), 2) break;
 
     # TODO: Return the order list and the order total
 
